@@ -1,2 +1,2 @@
-# aqstore-core
-A common library for aqstore microservices
+# aqstore-account-service
+A service to manage user roles and information
