@@ -16,10 +16,11 @@ public class KeycloakRealmRoleConverter implements Converter<Jwt, Collection<Gra
 	@SuppressWarnings("unchecked")
 	public Collection<GrantedAuthority> convert(final Jwt jwt) {
 		final Map<String, Object> realmAccess = (Map<String, Object>) jwt.getClaims().get("realm_access");
-		return ((List<String>) realmAccess.get("roles")).stream()
+		List<GrantedAuthority> roles =  ((List<String>) realmAccess.get("roles")).stream()
 				.map(roleName -> "ROLE_" + roleName.toUpperCase())
 				.map(SimpleGrantedAuthority::new)
 				.collect(Collectors.toList());
+		return roles;
 	}
 	
 	
