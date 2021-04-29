@@ -11,7 +11,7 @@
 	</parent>
 	<groupId>com.aqstore.service</groupId>
 	<artifactId>aqstore-core</artifactId>
-	<version>1.0.0</version>
+	<version>1.0.1-SNAPSHOT</version>
 	<name>aqstore-core</name>
 	<description>A common library used by aqstore microservices</description>
 	<properties>
