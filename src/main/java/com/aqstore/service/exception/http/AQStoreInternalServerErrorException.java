@@ -9,7 +9,7 @@ public class AQStoreInternalServerErrorException extends AbstractAQStoreExceptio
 	private static final long serialVersionUID = -7820403552022799560L;
 
 	public AQStoreInternalServerErrorException(Exception e) {
-		super("ISE0","Internal Server Error -  exception : %s  - message : %s", e.getClass().getSimpleName(),e.getMessage());
+		super("ISE0","Internal Server Error");
 	}
 	
 

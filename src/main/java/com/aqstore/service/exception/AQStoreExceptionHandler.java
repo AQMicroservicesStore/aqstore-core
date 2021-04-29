@@ -13,12 +13,16 @@ public class AQStoreExceptionHandler {
 
 	public static AbstractAQStoreException handleException(Exception e) {
 		log.error("Exeption error - {} - {}",e.getClass().getSimpleName(),e.getMessage());
+		
 		if(e instanceof AbstractAQStoreException) {
 			return (AbstractAQStoreException)e;
 		}else {
 			return new AQStoreInternalServerErrorException(e);
 		}
 	}		
+	
+	
+	
 	
 	public static AbstractAQStoreException handleException(AQStoreExceptionType t,Object ...args) {
 		try {
