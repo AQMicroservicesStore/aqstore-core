@@ -1,5 +1,4 @@
 package com.aqstore.service.event;
-
 import org.springframework.cloud.stream.function.StreamBridge;
 
 import com.aqstore.service.event.exception.EventExceptionType;

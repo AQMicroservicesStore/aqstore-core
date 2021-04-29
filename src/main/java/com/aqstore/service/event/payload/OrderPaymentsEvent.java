@@ -16,6 +16,7 @@ public class OrderPaymentsEvent extends AbstractBaseEvent{
 	
 	private Long orderId;
 	private String userId;
+	private String refundedDescription;
 	private Float orderPrice;
 	
 	
